@@ -1,0 +1,32 @@
+{
+  "name": "broadcast-server",
+  "version": "1.0.0",
+  "description": "A CLI WebSocket broadcast server and client: every message a client sends is relayed to all other connected clients.",
+  "type": "module",
+  "bin": {
+    "broadcast-server": "bin/broadcast-server.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "start": "node bin/broadcast-server.js start",
+    "connect": "node bin/broadcast-server.js connect",
+    "test": "node --test"
+  },
+  "keywords": [
+    "websocket",
+    "broadcast",
+    "chat",
+    "cli",
+    "real-time"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
